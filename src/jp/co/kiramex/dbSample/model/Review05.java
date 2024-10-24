@@ -35,11 +35,6 @@ public class Review05 {
             System.out.print("検索キーワードを入力してください > ");
             int input = keyInNum();
 
-            if (input == 0) {
-                System.out.println("無効な入力です。");
-                return;
-            }
-
 
             // PreparedStatementオブジェクトの?に値をセット
             pstmt.setInt(1, input);
